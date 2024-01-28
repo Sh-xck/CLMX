@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/d8/57/19/d857190ac3c90cfe4757cbff261c0089.png');
+            background-size: cover; /* Adjust the background size as needed */
+            background-position: center; /* Adjust the background position as needed */
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: #ffffff; /* Set the text color to contrast with the background */
+        }
+        aqi_option{
+            color : #ffffff;}
+
+        /* Add any additional styles as needed */
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select AQI Option</title>
+</head>
+<body>
+    <h1>Select AQI Option</h1>
+    <form action="/aqi" method="post">
+        <label for="aqi_option">Select AQI Option:</label>
+        <select name="aqi_option" id="aqi_option">
+            <option value="given">Given AQI</option>
+            <option value="predicted">Predicted AQI</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    {% extends 'base.html' %}
+</body>
+</html>

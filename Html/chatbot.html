@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Response</title>
+
+    <!-- Include Chatbase script -->
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "378eKiHjmSOi-2bDHgUld",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="378eKiHjmSOi-2bDHgUld" domain="www.chatbase.co" defer></script>
+</head>
+<body>
+    <h1>Chatbot Response</h1>
+    <p><strong>User Input:</strong> {{ user_input }}</p>
+    <p><strong>Chatbot Response:</strong> {{ chatbot_response }}</p>
+    <a href="/">Go back to home</a>
+</body>
+</html>

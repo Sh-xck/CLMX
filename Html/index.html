@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/81/7c/87/817c87f16a71795c36abbcb9b9971f2c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif; /* Add a preferred font-family */
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 20px; /* Adjust the left position */
+            bottom: 20px; /* Adjust the bottom position */
+            z-index: 2; /* Ensure the buttons are above the background */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: white;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #cccccc;
+        }
+    </style>
+     <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "378eKiHjmSOi-2bDHgUld",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="378eKiHjmSOi-2bDHgUld"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Analysis Interface</title>
+</head>
+
+<body>
+    
+    <ul>
+        <li><a href="/aqi">AQI</a></li>
+        <li><a href="/suitable_spots">Suitable Spots</a></li>
+        <li><a href="/quantified_impact">Quantified Impact</a></li>
+    </ul>
+    {% extends 'base.html' %}
+
+
+</body>
+
+</html>
